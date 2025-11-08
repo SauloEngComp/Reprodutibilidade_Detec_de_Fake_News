@@ -105,3 +105,4 @@ Se o script principal foi interrompido (ex: processou o BART com 8% dos dados e 
 
 Este trabalho é uma reprodução de:
 * Vieira, C. B., Souza, J. V. S., & Cavalcanti, G. D. C. (2025). *Detecção de Fake News em Português: Análise Comparativa entre Métodos de Representação em Português, Inglês e Multilíngues*. Anais do [Nome do Evento da SBC].
+* Saulo Gomes Martins / Universidade Federal do Sul e Sudeste do Pará
