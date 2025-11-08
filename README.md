@@ -2,8 +2,8 @@
 Reprodução do artigo "Detecção de Fake News em Português" (Vieira et al., 2025), comparando embeddings e classificadores (MLP, RFC, SVC).
 # Reprodução: Detecção de Fake News com Embeddings em Português
 
-Este repositório contém o código e os resultados da reprodução do artigo **"Detecção de Fake News em Português: Análise Comparativa entre Métodos de Representação em Português, Inglês e Multilíngues"** (Vieira et al., 2025)[cite: 5, 6].
-O objetivo deste projeto, desenvolvido para a disciplina de Aprendizagem de Máquina [cite: 376], é replicar a metodologia de comparação de diferentes embeddings de linguagem (como BERTimbau, ROBERTA, TUCANO, etc.) [cite: 13, 19, 32] na tarefa de detecção de fake news. O estudo utiliza os classificadores MLP, RFC e SVC [cite: 11] sobre o dataset FAKE.BR CORPUS[cite: 17, 37].
+Este repositório contém o código e os resultados da reprodução do artigo **"Detecção de Fake News em Português: Análise Comparativa entre Métodos de Representação em Português, Inglês e Multilíngues"** (Vieira et al., 2025).
+O objetivo deste projeto, desenvolvido para a disciplina de Aprendizagem de Máquina, é replicar a metodologia de comparação de diferentes embeddings de linguagem (como BERTimbau, ROBERTA, TUCANO, etc.) na tarefa de detecção de fake news. O estudo utiliza os classificadores MLP, RFC e SVC  sobre o dataset FAKE.BR CORPUS.
 
 ## 🚀 Requisitos e Instalação
 
@@ -42,7 +42,7 @@ O script `compare_embbedings.py` é o orquestrador principal. Ele baixa os dados
 
 1.  **Configure a Fração dos Dados:**
     * Abra o arquivo `compare_embbedings.py` em um editor de código.
-    * [cite_start]Localize a função `load_data()`[cite: 2, 86].
+    * Localize a função `load_data()`.
     * Ajuste a variável `fracao` para o percentual de dados que deseja usar (ex: `fracao = 0.8` para 80% ou `fracao = 0.1` para 10%).
 
 2.  **Execute o Script:**
@@ -52,10 +52,10 @@ O script `compare_embbedings.py` é o orquestrador principal. Ele baixa os dados
     ```
 
 3.  **Acompanhe o Processo:**
-    [cite_start]O script foi projetado para "pular" o trabalho que já foi feito[cite: 2, 192, 217]. Se ele for interrompido, você pode simplesmente executá-lo novamente, e ele continuará de onde parou.
+   O script foi projetado para "pular" o trabalho que já foi feito. Se ele for interrompido, você pode simplesmente executá-lo novamente, e ele continuará de onde parou.
 
 4.  **Resultados:**
-    O script irá criar/atualizar a pasta `Results/`. [cite_start]Os resultados finais de métricas estarão em `Results/Metrics/results.csv` [cite: 2, 237] [cite_start]e os embeddings brutos em `Results/Embeddings/embeddings.pkl`[cite: 2, 214].
+    O script irá criar/atualizar a pasta `Results/`. Os resultados finais de métricas estarão em `Results/Metrics/results.csv` e os embeddings brutos em `Results/Embeddings/embeddings.pkl`.
 
        🛠️ Ferramentas Adicionais e Solução de Problemas
 
@@ -92,7 +92,7 @@ Se o script principal foi interrompido (ex: processou o BART com 8% dos dados e 
 
 ### 3. Gerar CSV Manualmente (`to_csv.py`)
 
-[cite_start]Se o script `compare_embbedings.py` travou *depois* de salvar os `results.pkl` [cite: 1, 14][cite_start], mas *antes* de conseguir criar o `results.csv`[cite: 1, 29].
+Se o script `compare_embbedings.py` travou *depois* de salvar os `results.pkl` , mas *antes* de conseguir criar o `results.csv`.
 
 * **Uso:**
     1.  Execute:
